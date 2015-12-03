@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/darthmall/once-in-a-blue-moon/issues"
   },
-  "homepage": "https://github.com/darthmall/once-in-a-blue-moon#readme"
+  "homepage": "https://github.com/darthmall/once-in-a-blue-moon#readme",
+  "dependencies": {
+    "d3": "^3.5.10"
+  },
+  "devDependencies": {
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
 }
