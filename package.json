@@ -1,0 +1,19 @@
+{
+  "name": "once-in-a-blue-moon",
+  "version": "1.0.0",
+  "description": "A visualization of how often a blue moon occurs according to various definitions of what constitutes a blue moon",
+  "main": "src/js/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/darthmall/once-in-a-blue-moon.git"
+  },
+  "author": "W. Evan Sheehan <wallace.sheehan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/darthmall/once-in-a-blue-moon/issues"
+  },
+  "homepage": "https://github.com/darthmall/once-in-a-blue-moon#readme"
+}
