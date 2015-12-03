@@ -29,7 +29,9 @@ gulp.task('css', function () {
 });
 
 gulp.task('clean', function (cb) {
-  del(['build']).then(cb);
+  del(['build']).then(function () {
+    cb()
+  });
 });
 
 gulp.task('build', ['html', 'css', 'js']);
