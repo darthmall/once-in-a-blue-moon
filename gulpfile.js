@@ -23,6 +23,11 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./build'));
 });
 
+gulp.task('static', function () {
+  gulp.src('./data/*')
+    .pipe(gulp.dest('./build/data'));
+});
+
 gulp.task('css', function () {
   gulp.src('./src/css/*.css')
     .pipe(gulp.dest('./build/css'));
@@ -34,12 +39,13 @@ gulp.task('clean', function (cb) {
   });
 });
 
-gulp.task('build', ['html', 'css', 'js']);
+gulp.task('build', ['static', 'html', 'css', 'js']);
 
-gulp.task('dev', ['html', 'css'], function () {
+gulp.task('dev', ['static', 'html', 'css'], function () {
   gulp.watch('src/css/*.css', ['css']);
   gulp.watch('src/*.html', ['html']);
-  
+  gulp.watch('data/*', ['static']);
+
   // Start a webpack-dev-server
   var compiler = webpack(config);
 
