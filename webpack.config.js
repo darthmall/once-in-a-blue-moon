@@ -7,5 +7,5 @@ module.exports = {
     path: path.join(__dirname, 'build'),
     filename: 'js/main.js'
   },
-  devTool: 'source-map'
+  devtool: 'source-map'
 };

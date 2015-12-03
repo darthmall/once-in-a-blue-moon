@@ -95,10 +95,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+html {
+  background-color: #112;
+  color: white;
+}
 
+svg circle {
+  fill: #D8D8CC;
+}
 
-
-
+svg .blue {
+  fill: #3186FF;
+}
 
 
 

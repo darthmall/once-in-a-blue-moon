@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/darthmall/once-in-a-blue-moon#readme",
   "dependencies": {
-    "d3": "^3.5.10"
+    "d3": "^3.5.10",
+    "lodash": "^3.10.1",
+    "moment": "^2.10.6"
   },
   "devDependencies": {
     "del": "^2.1.0",
