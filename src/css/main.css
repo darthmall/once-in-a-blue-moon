@@ -100,15 +100,23 @@ html {
   color: white;
 }
 
+body {
+  margin: 0 15px;
+}
+
 svg circle {
   fill: #D8D8CC;
+  transition: fill 300ms ease;
 }
 
 svg .blue {
   fill: #3186FF;
 }
 
-
+svg .axis text {
+  fill: white;
+  font-size: 11pt;
+}
 
 
 

@@ -5,7 +5,9 @@ var MoonPhases = require('./components/MoonPhases.js');
 function App() {
   this.moons = new MoonPhases(document.getElementById('moons'));
 
-  this.moons.radius(5);
+  this.moons
+    .radius(5)
+    .margin({ top: 8, right: 180, bottom: 5, left: 5 });
 
   window.addEventListener('resize', this.resize.bind(this));
 }
@@ -30,7 +32,6 @@ App.prototype = {
   },
 
   resize: function () {
-    this.moons.resize();
   }
 };
 
