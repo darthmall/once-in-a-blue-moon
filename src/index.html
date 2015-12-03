@@ -16,8 +16,20 @@
         <![endif]-->
 
         <h1>Once in a Blue Moon</h1>
-        <p>The second full moon in a month.</p>
-        <p>The third full moon in a season with four full moons.</p>
+        
+        <form id="blue-moon-type">
+          <input id="monthly-blue-moon" name="blue-moon-type-option" type="radio" value="monthly" checked />
+          <label for="monthly-blue-moon">
+            The second full moon in a month
+            <span class="count"></span>
+          </label>
+          <input id="seasonal-blue-moon" name="blue-moon-type-option" type="radio" value="seasonal" />
+          <label for="seasonal-blue-moon">
+            The third full moon in a month with four
+            <span class="count"></span>
+          </label>
+        </form>
+
         <div>
           <svg id="moons"></svg>
         </div>
