@@ -37,11 +37,14 @@ gulp.task('clean', function (cb) {
 gulp.task('build', ['html', 'css', 'js']);
 
 gulp.task('dev', ['html', 'css'], function () {
+  gulp.watch('src/css/*.css', ['css']);
+  gulp.watch('src/*.html', ['html']);
+  
   // Start a webpack-dev-server
   var compiler = webpack(config);
 
-  new WebpackDevServer(compiler, {
-    // server and middleware options
+  var server = new WebpackDevServer(compiler, {
+    contentBase: './build'
   }).listen(8080, "localhost", function(err) {
     if(err) throw new gutil.PluginError("webpack-dev-server", err);
     // Server listening
